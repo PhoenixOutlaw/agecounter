@@ -1,6 +1,6 @@
 {
   "homepage": "http://PhoenixOutlaw.github.io/agecounter",
-  "name": "wtsurage",
+  "name": "agecounter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
