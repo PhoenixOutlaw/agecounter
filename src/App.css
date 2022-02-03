@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.f-c {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.App {
+  text-align: center;
   color: white;
+  font-size: clamp(30px, 9vw, 80px);
+  gap: .2em;
 }
 
-.App-link {
-  color: #61dafb;
+.App > h1 {
+  font-size: 1em;
+  font-weight: 600;
+  background: linear-gradient(rgb(98, 0, 255), rgb(9, 255, 214));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form {
+  gap: 0.5em;
+  font-size: 1em;
+}
+.form > input[type="date"] {
+  outline: none;
+  padding: 0.5em;
+  /* border: white solid thin; */
+  border-radius:20px;
+  cursor: pointer;
+  font-size: 0.5em;
+  background: linear-gradient(rgb(98, 0, 255), rgb(9, 255, 214));
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.form > button {
+  font-size: 0.3em;
+ border-radius: 20px;
+ padding:.4em 2em;  
+ cursor: pointer;
+}
+#error{
+  font-size: .3em;
+  color: red;
+}
+.count{
+ font-size: .6em;
+  animation: count 2s ease-in forwards;
+}
+@keyframes count {
+  0%{
+    color:rgb(98, 0, 255);
   }
-  to {
-    transform: rotate(360deg);
+  50%{
+    color:rgb(9, 255, 214);
+  }
+  100%{
+    color:rgb(0, 255, 136);
+
   }
 }
